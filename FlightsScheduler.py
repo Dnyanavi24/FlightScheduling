@@ -132,7 +132,7 @@ sortedList=sorted(finalSchedule,key=itemgetter(0,3))
 listToPrint=[[w[0],w[1],w[2],w[3],w[4]] for w in sortedList]
     
 csv_header = 'tail_number,origin,destination,departure_time,arrival_time'
-file_name = 'flight_schedule.csv'
+file_name = 'FlightsSchedule.csv'
 def print_flight_schedule(fn, csv_hdr, flt_sched):
     with open(fn,'wt') as f:
         print(csv_hdr, file=f)
